@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRPGシナリオ検索サイト</title>
+
+    <!-- CSSのリンク -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 動的に変わるフォント指定 -->
+    <span id="dim-title-font"></span>
+    <!--こう置き換わる <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" type="text/css"> -->
+</head>
+
+<body>
+    <div class="background">
+        <!-- header -->
+        <header>
+            <div class="headerflex">
+                <h1 class="headertitle"><a href="../" class="headertitleA">TRPGシナリオ検索サイト</a></h1>
+                <form method="get" action="#" class="search_container">
+                    <input type="text" size="25" placeholder="　キーワード検索">
+                    <input type="submit" value="Search">
+                </form>
+                <ul class="headerlist">
+                    <li>絞り込み検索</li>
+                    <li>CoC</li>
+                    <li>シノビガミ</li>
+                    <li>SW</li>
+                    <li>白物語</li>
+                    <li>もっと見る</li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <h1 class="title top-margin">クトゥルフ神話TRPG シナリオ一覧ページ</h1>
+            <hr class="titleline">
+            <div id="result" class="scenarioarea">
+                <div class="scenariobox">
+                    <div>
+                        <h2>TEST title</h2>
+                        <div class="flex">
+                            <div>
+                                <h3>人数・時間</h3>
+                                <p>n人用 約n~m時間</p>
+                            </div>
+                            <div>
+                                <h3>価格</h3>
+                                <p>価格が入る</p>
+                            </div>
+                            <div>
+                                <h3>配布・販売先</h3>
+                                <p><a href="">BOOTHとか</a></p>
+                            </div>
+                        </div>
+                        <h3>概要</h3>
+                        <p>ここにシナリオの内容が入ります。<br>想定としては大体200文字程度でなんとか<br>やりくりしたいと思っています。</p>
+                        <div class="atags"><a href="">詳細を見る</a></div>
+                    </div>
+                    <img src="" alt="test">
+                </div>
+            </div>
+            <br>
+        </main>
+        <footer>
+            TRPGシナリオ検索サイト by Mikuto 2024.<br>
+            当サイトには、「 株式会社アークライト 」及び「株式会社KADOKAWA」が権利を有する『クトゥルフ神話TRPG』の二次創作物が含まれます。
+        </footer>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="./coc_script/script.js"></script>
+</body>
+
+</html>

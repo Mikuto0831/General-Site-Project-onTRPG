@@ -1,0 +1,318 @@
+/* 全てのタグのmargin・paddingを消去 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*背景固定*/
+.background {
+    width: 100%;
+    min-height: 100%;
+    /* background-image: url('../img/星空ループ_色濃いめ.gif'); */
+    /* 画像参照元 https://booth.pm/ja/items/2889738?registration=1 */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000030;
+}
+
+/* 右寄せのリンク */
+.rightA {
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* header関連 */
+header {
+    /* ヘッダーを固定する */
+    position: fixed;
+    top: 0;
+    /* 上部から配置の基準位置を決める */
+    left: 1.25%;
+    /* 左から配置の基準位置を決める */
+    width: 97.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px auto;
+    color: white;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.headertitle {
+    margin-left: 15px;
+}
+
+.headertitleA {
+    color: white;
+
+}
+
+.headerflex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerlist {
+    margin: auto 10px auto 0px;
+}
+
+.headerlist:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerlist li {
+    font-size: 110%;
+    list-style-type: none;
+    float: left;
+    margin: auto 10px;
+}
+
+/***********************************/
+
+/* main部分 */
+main {
+    margin: 0px 4% 0% 4%;
+    padding-top: 1%;
+    background-color: #ffffff76;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.maintitle {
+    padding-top: 90px;
+    text-align: center;
+    font-size: 300%;
+    font-weight: 800;
+}
+
+.maintitle2 {
+    /*文字サイズ違います*/
+    padding-bottom: 45px;
+    text-align: center;
+    font-size: 400%;
+    font-weight: 900;
+}
+
+.mainBtn {
+    padding: 5px 5px 0px;
+    display: block;
+    margin: 40px auto 40px;
+    text-align: center;
+    font-size: 250%;
+}
+
+.mainP {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 200%;
+}
+
+.mainflex {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.mainh2 {
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 600;
+}
+
+.mainP_center {
+    margin: 0px auto;
+}
+
+/* メモ帳ノート風 */
+.mainMemonote {
+    width: 34%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    /* 背景色 */
+    background-image: linear-gradient(180deg, #ccc 1px, transparent 1px);
+    /* 罫線の色と太さ  */
+    background-size: 100% 2.5em;
+    /* 行の高さ */
+    line-height: 2.5em;
+    /* 文字の高さ */
+    padding-bottom: 0.7em;
+    border-bottom-width: 1px;
+    /* 最終行の下にも罫線を引く */
+}
+
+.mainbox {
+    background-color: rgba(255, 255, 255, 0.641);
+    margin: 10px 2%;
+    padding: 1% 0%;
+    border-radius: 10px;
+}
+
+.superSmallFont {
+    font-size: 2px;
+}
+
+/* トップページ以外向けの設定 */
+.top-margin{
+    margin-top: 4%;
+}
+
+h1.title{
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+.titleline{
+    border-top: 3px solid #000;
+    border-style : solid none none none;
+    margin: auto 10px;
+}
+
+div.scenarioarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.scenariobox{
+    width: 47.5%;
+    max-width: 47.5%;
+    height: 230px;
+    flex: auto;
+    margin: 20px;
+    background-color: #fff; 
+    display: flex;
+}
+
+div.scenariobox div{
+    width: 65%;
+}
+div.scenariobox div.flex{
+    display: flex;
+    width: auto;
+    margin-bottom: 5px;
+}
+div.scenariobox div.flex div.nomal{
+    width: 27%;
+}
+div.scenariobox div.flex div.price{
+    width: 19%;
+}
+div.scenariobox h2{
+    font-size: 32px;
+    margin-left: 10px;
+}
+div.scenariobox h3{
+    font-weight: 600;
+    margin-left: 15px;
+}
+div.scenariobox p{
+    margin-left: 20px;
+}
+div.scenariobox p.oneline{
+    white-space: nowrap; /* 折り返し無しにする */
+    overflow: hidden; /* はみ出た部分を非表示 */
+    text-overflow: ellipsis; /* 語尾を3点リーダーに */
+}
+div.scenariobox p.overview{
+    display: -webkit-box; /* 必須 */
+    -webkit-box-orient: vertical; /* 必須 */
+    -webkit-line-clamp: 3; /* 行数を制限 */
+    overflow: hidden; /* はみ出た部分を非表示 */
+}
+
+div.scenariobox div.atags{
+    width: auto;
+    margin-left: 80%;
+    margin-right: 10px;
+}
+div.scenariobox img{
+    max-width: 25%;
+    max-height: 95%;
+    margin: auto;
+}
+
+
+
+div.whiteback{
+    background-color: #fff;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+div.whiteback h2{
+    font-size: 40px;
+    margin: 5px auto 10px 20px;
+}
+div.whiteback h2 a{
+    color: #000;
+}
+
+div.whiteback h3{
+    font-size: 24px;
+    margin: auto auto 10px 25px;
+}
+div.whiteback h4{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+div.whiteback p{
+    margin-left:27.5px;
+}
+
+/*****************************************/
+
+/* footer部分 */
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+/*****************************************/
+/*　検索BOXのCSS                     　   */
+/*　参考元 https://cotodama.co/search-box/*/
+/*****************************************/
+
+.search_container {
+    box-sizing: border-box;
+    margin: auto 0px;
+    background-color: white;
+}
+
+.search_container input[type="text"] {
+    margin-left: 4px;
+    background: white;
+    border: none;
+    height: 2.0em;
+}
+
+.search_container input[type="text"]:focus {
+    outline: 0;
+}
+
+.search_container input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    background: #3879D9;
+    color: #fff;
+    outline: none;
+    height: 2.2em;
+}
+
+.search_container ::-webkit-input-placeholder {
+    color: #00000053;
+}
